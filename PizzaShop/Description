@@ -1,0 +1,9 @@
+Total Four  packegaes are there namely :=
+1)Entities  =>  all entities Customer,Admin, Pizza , Orders  
+2)DAO(Data Access Object) =>  Deals with Crud Operations with database  ( that interacts with database)
+3)Utils  => Establish  connection with database( JDBC)
+4)Menu   =>  includes 
+         a) Menu -> login , register ,admin
+         b) Login    => i)order ii)order history iii)pizza menu  iv)Logout
+         c) register => i)Enter your Details
+         d) admin    =>  i)Customer Details   ii) Orders details  iii)Update Prices iv)Pizza Menu v) Add new Pizza vi) Delete Pizza  vii)Logout
