@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Mentee</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <main>
+    <h2>Add New Mentee</h2>
+    <form action="add_mentee.php" method="POST">
+      <label>Name</label>
+      <input name="name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+
+      <label>Batch</label>
+      <input name="batch">
+
+      <button type="submit">Add Mentee</button>
+    </form>
+  </main>
+</body>
+</html>
