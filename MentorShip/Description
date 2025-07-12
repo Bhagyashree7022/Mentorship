@@ -1,7 +1,0 @@
-MENTOR MENTEE MANAGEMENT SYSTEM 
-LOGIN => 1) Admin 
-      => 2) Mentor
-      => 3) Mentee
-1)Admin => i) Add Mentee ii)Add MEntors iii)Assign projects to mentor iv)view Feedbacks 
-2)Mentor => i)Update Profiles ii) View Mentees iii)Assign mennted to Projects iv)Check Progress status  v)View Feedback
-3)Mentee => i)Update Profile  ii)View Assigned Project with Mentor iii) Submit Feedback
