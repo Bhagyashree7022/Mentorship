@@ -1,2 +1,2 @@
 #  Mentor Mentee Web Application
-<img width="721" height="451" alt="image" src="https://github.com/user-attachments/assets/500e6e5b-16eb-49bd-8ed6-e241c6929a38" />
+<img width="1254" height="824" alt="image" src="https://github.com/user-attachments/assets/7ae3614c-bfb5-4c94-ac58-c1e1ca9a894d" />
