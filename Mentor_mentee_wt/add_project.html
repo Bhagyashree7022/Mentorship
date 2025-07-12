@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Project</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <main>
+    <h2>Add New Project</h2>
+    <form action="add_project.php" method="POST">
+      <label class ="">Title</label>
+      <input name="title" required>
+
+      <label>Description</label>
+      <input type="text" name="description" required>
+
+      <label>Start_date</label>
+      <input type="date" name="start_date">
+
+      <label>End_date</label>
+      <input type="date" name="end_date">
+      <button type="submit">Add Project</button>
+    </form>
+
+  </main>
+
+</body>
+</html>

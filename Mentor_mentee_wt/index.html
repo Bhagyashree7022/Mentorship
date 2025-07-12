@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mentorship System - Login</title>
+  <link href="style1.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bg-light">
+
+  <div class="site">
+    <h2 class="form">Mentorship Management Login</h2>
+
+    <form action="login.php" method="POST" class="">
+      
+      <div >
+        <label class="form-select">Email address</label>
+        <input type="email" name="email" class="" placeholder="Enter email" required>
+      </div>
+
+      <div class="form-select">
+        <label class="">Password</label>
+        <input type="password"  name="password" class="form-control" placeholder="Password" required>
+      </div>
+
+      <div class="form-select">
+        <label class="form-control">Role</label>
+        <select name="role" class="form-select" required>
+          <option value="">Select Role</option>
+          <option value="admins">Admin</option>
+          <option value="mentors">Mentor</option>
+          <option value="mentees">Mentee</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Login</button>
+    </form>
+  </div>
+
+</body>
+</html>
