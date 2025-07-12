@@ -1,0 +1,90 @@
+
+mysql> use mentorship;
+Database changed
+  
+mysql> show tables;
++----------------------+
+| Tables_in_mentorship |
++----------------------+
+| admins               |
+| feedback             |
+| mentee_assignments   |
+| mentees              |
+| mentor_assignments   |
+| mentors              |
+| projects             |
++----------------------+
+7 rows in set (0.00 sec)
+  
+mysql> desc admins;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| admin_id | int          | NO   | PRI | NULL    | auto_increment |
+| name     | varchar(100) | YES  |     | NULL    |                |
+| email    | varchar(100) | YES  | UNI | NULL    |                |
+| password | varchar(15)  | YES  |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+
+mysql> desc mentors;
++------------+--------------+------+-----+------------+----------------+
+| Field      | Type         | Null | Key | Default    | Extra          |
++------------+--------------+------+-----+------------+----------------+
+| mentor_id  | int          | NO   | PRI | NULL       | auto_increment |
+| name       | varchar(100) | YES  |     | NULL       |                |
+| email      | varchar(100) | YES  | UNI | NULL       |                |
+| department | varchar(50)  | YES  |     | NULL       |                |
+| password   | varchar(100) | NO   |     | mentor@123 |                |
++------------+--------------+------+-----+------------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> desc mentees;
++-----------+--------------+------+-----+------------+----------------+
+| Field     | Type         | Null | Key | Default    | Extra          |
++-----------+--------------+------+-----+------------+----------------+
+| mentee_id | int          | NO   | PRI | NULL       | auto_increment |
+| name      | varchar(100) | YES  |     | NULL       |                |
+| email     | varchar(100) | YES  | UNI | NULL       |                |
+| batch     | varchar(50)  | YES  |     | NULL       |                |
+| password  | varchar(100) | NO   |     | mentee@123 |                |
++-----------+--------------+------+-----+------------+----------------+
+5 rows in set (0.01 sec)
+
+mysql> desc projects;
++-------------+--------------+------+-----+---------+----------------+
+| Field       | Type         | Null | Key | Default | Extra          |
++-------------+--------------+------+-----+---------+----------------+
+| project_id  | int          | NO   | PRI | NULL    | auto_increment |
+| title       | varchar(150) | YES  |     | NULL    |                |
+| description | text         | YES  |     | NULL    |                |
+| start_date  | date         | YES  |     | NULL    |                |
+| end_date    | date         | YES  |     | NULL    |                |
++-------------+--------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> desc mentee_assignments;
++-----------------------+-------------+------+-----+---------+----------------+
+| Field                 | Type        | Null | Key | Default | Extra          |
++-----------------------+-------------+------+-----+---------+----------------+
+| assignment_id         | int         | NO   | PRI | NULL    | auto_increment |
+| mentee_id             | int         | YES  | MUL | NULL    |                |
+| project_id            | int         | YES  | MUL | NULL    |                |
+| assigned_on           | date        | NO   |     | NULL    |                |
+| progress_status       | varchar(50) | YES  |     | NULL    |                |
+| assigned_by_mentor_id | int         | YES  | MUL | NULL    |                |
++-----------------------+-------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+mysql> desc mentor_assignments;
++----------------------+------+------+-----+---------+----------------+
+| Field                | Type | Null | Key | Default | Extra          |
++----------------------+------+------+-----+---------+----------------+
+| assignment_id        | int  | NO   | PRI | NULL    | auto_increment |
+| mentor_id            | int  | YES  | MUL | NULL    |                |
+| project_id           | int  | YES  | MUL | NULL    |                |
+| assigned_on          | date | NO   |     | NULL    |                |
+| assigned_by_admin_id | int  | YES  | MUL | NULL    |                |
++----------------------+------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
+
+  
